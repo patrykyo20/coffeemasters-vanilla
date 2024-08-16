@@ -1,0 +1,26 @@
+{
+  "name": "coffeemasters-vanilla",
+  "version": "1.0.0",
+  "description": "Coffee-shop",
+  "main": "serviceworker.js",
+  "scripts": {
+    "prettier": "npx prettier . --write",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrykyo20/coffeemasters-vanilla.git"
+  },
+  "keywords": [
+    "123"
+  ],
+  "author": "Patryk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrykyo20/coffeemasters-vanilla/issues"
+  },
+  "homepage": "https://github.com/patrykyo20/coffeemasters-vanilla#readme",
+  "devDependencies": {
+    "prettier": "3.3.3"
+  }
+}
