@@ -38,6 +38,12 @@ export default class MenuPage extends HTMLElement {
           </ul>
         `;
         this.root.querySelector("#menu").appendChild(liCategory);
+
+        category.products.map((product) => {
+          const item = document.createElement("product-item");
+          item.dataset.product = JSON.stringify(product);
+          liCategory.querySelector("ul").appendChild(item);
+        });
       }
     } else {
       this.root.querySelector("#menu").innerHTML = "Loading...";
