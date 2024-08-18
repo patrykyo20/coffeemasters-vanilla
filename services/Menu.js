@@ -5,17 +5,16 @@ export async function loadData() {
   app.store.menu = data;
 }
 
-export async function getProductById() {
-  if (app.store.menu === null) {
+export async function getProductById(id) {
+  if (app.store.menu == null) {
     await loadData();
   }
-  for (let e of app.store.menu) {
+  for (let c of app.store.menu) {
     for (let p of c.products) {
-      if (p.id === id) {
+      if (p.id == id) {
         return p;
       }
     }
   }
-
-  return null
+  return null;
 }
